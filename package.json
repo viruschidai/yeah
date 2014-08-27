@@ -1,0 +1,25 @@
+{
+  "name": "easy-ui-testing",
+  "version": "0.0.1",
+  "description": "A selenium UI testing framework to easy the pain of writing UI tests",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "mocha": "^1.21.4",
+    "expect.js": "^0.3.1",
+    "webdriver-manager": "^0.0.7"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --compilers coffee:coffee-script/register -R spec --recursive test",
+    "prepublish": "coffee --output dist --compile src"
+  },
+  "author": "Bill Gao <viruschidai@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^2.42.1"
+  }
+}
